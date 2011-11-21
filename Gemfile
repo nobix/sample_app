@@ -16,7 +16,9 @@ end
 group :test do
   gem 'rspec', '~> 2.7'
   gem 'webrat', '0.7.3'
- # gem 'spork', '~> 0.9.0.rc9'
+  gem 'spork', '~> 0.9.0.rc9'
+  #gem 'spork', '~> 0.8.5'
+  #gem 'spork', '~> 0.9.0.rc'
 end
 
 # Gems used only for assets and not required

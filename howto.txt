@@ -1,0 +1,2 @@
+run /c/workspace/sample_app/spork to start spork
+run /c/workspace/sample_app/autotest to start autotest
