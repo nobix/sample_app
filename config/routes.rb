@@ -1,9 +1,13 @@
 SampleApp::Application.routes.draw do
-  get "users/new"
+  #get "users/new"
 
   # get "pages/home"
   # get "pages/contact"
   # get "pages/about"
+  
+  #below is the magic line. the URL /users/1 works perfectly (Figure 6.10).
+  resources :users
+  
   root :to => 'pages#home'
   match '/home', :to => 'pages#home'
   match '/contact', :to => 'pages#contact'
@@ -11,6 +15,7 @@ SampleApp::Application.routes.draw do
   match '/help', :to => 'pages#help'
   
   match '/signup', :to => 'users#new'
+  #match '/users', :to => 'users#show'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

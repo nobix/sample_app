@@ -6,17 +6,20 @@ gem 'rails', '3.1.1'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-
+# gem 'faster_require', '0.9.2'
+gem 'gravatar_image_tag', '1.0.0'
 group :development do
   gem 'autotest', '~> 4.4.6'
   gem 'autotest-growl', '~> 0.2.16'
   gem 'rspec-rails', '~> 2.7'
+  gem 'annotate', '2.4.0'
 end
 
 group :test do
   gem 'rspec', '~> 2.7'
   gem 'webrat', '0.7.3'
   gem 'spork', '~> 0.9.0.rc9'
+  gem 'factory_girl_rails', '1.4.0'
   #gem 'spork', '~> 0.8.5'
   #gem 'spork', '~> 0.9.0.rc'
 end
